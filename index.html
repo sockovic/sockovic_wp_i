@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja osobna Web stranica</title>
+    <meta name="author" content="Paulina Sočković">
+    <style>
+   
+
+body {
+  font-family: var(--body-font);
+  background: var(--light-bg);
+  line-height: 1.6;
+  color: var(--dark);
+  padding-top: 70px; 
+  background-color: hotpink;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-family: var(--title-font);
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+}
+.nav-link {
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+.nav-link:hover {
+  color: var(--primary);
+}
+
+/* Masthead (hero slika s overlayem) */
+.masthead {
+  position: relative;
+  padding: 8rem 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.masthead.small {
+  padding: 6rem 0;
+}
+.masthead::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+.masthead .container {
+  position: relative;
+  z-index: 2;
+}
+.masthead h1, .masthead p {
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+/* Kartica sa slikom */
+.card {
+  border-radius: 1rem;
+  overflow: hidden;
+  
+}
+.card-img-top {
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  background-color: burlywood;
+}
+.card-body {
+  padding: 1.5rem;
+  background-color: burlywood;
+}
+
+/* Sekcije */
+section {
+  margin-bottom: 2rem;
+  background-color: burlywood;
+}
+section h3 {
+  font-family: var(--title-font);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Lista hobija */
+.list-group-item {
+  background-color: burlywood;
+  border: 0;
+  border-bottom: 1px solid #e9ecef;
+  padding: 0.75rem 0;
+  
+  
+}
+
+/* Footer */
+footer {
+  background: #fff;
+  border-top: 1px solid #e9ecef;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+/* Dugmad */
+.btn {
+  border-radius: 0.5rem;
+  font-weight: 500;
+
+}
+.btn-dark:hover {
+  background-color: aqua;
+}
+
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="hr">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Moja Osobna Web Stranica — Paulina Sočković</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+      
+    </head>
+    <body>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm bg-white">
+        <div class="container">
+          <a class="navbar-brand fw-semibold" href="index.html">Paulina Sočković</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Početna</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+      <!-- Hero sekcija -->
+      <header class="masthead" style="background-image: url('https://www.unisb.hr/wp-content/uploads/design/banner_logo.png');">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1 class="display-4 fw-bold text-white">Moja Osobna Web Stranica</h1>
+              <p class="lead text-white-50">Dobrodošli na moju stranicu!</p>
+            </div>
+          </div>
+        </div>
+      </header>
+    
+      <!-- Glavni sadržaj -->
+      <main class="container my-5">
+        <div class="row g-4 align-items-start">
+          <!-- Slika i info -->
+          <div class="col-md-5 col-lg-4">
+            <div class="card border-0 shadow-sm">
+              <img src="https://img.freepik.com/premium-vector/female-teacher-cute-woman-stands-with-pointer-book-school-learning-concept-teacher-s-day_335402-428.jpg" class="card-img-top" alt="Paulina Sočković">
+              <div class="card-body">
+                <h2 class="h4 card-title mb-1">Paulina Sočković</h2>
+                <p class="text-muted mb-2">Studentica na Učiteljskom fakultetu u Slavonskom Brodu</p>
+                <p class="mb-0">
+                  Volim rad s djecom, to me inspirira i nadopunjuje, i upravo zato sam upisala učiteljski studij.
+                </p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-md-7 col-lg-8">
+            <section class="p-4 p-md-5 rounded-4 shadow-sm bg-white">
+              <h3 class="h4 mb-3">O meni</h3>
+              <p class="mb-0">
+                Zovem se <strong>Paulina Sočković</strong> i studiram na <strong>Učiteljskom fakultetu u Slavonskom Brodu</strong>.
+                Strastvena sam u radu s djecom, gdje svaki dan učim i rastem. Vjerujem da se kroz igru,
+                kreativnost i toplu suradnju gradi okruženje u kojem djeca napreduju, a i mi odrasli postajemo bolji.
+              </p>
+            </section>
+    
+            <!-- Hobiji -->
+            <section class="p-4 p-md-5 mt-4 rounded-4 shadow-sm bg-white">
+              <h3 class="h4 mb-3">Vještine i hobiji</h3>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Igranje s djecom
+                  <span class="badge bg-primary rounded-pill">hobiji</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Putovanja
+                  <span class="badge bg-primary rounded-pill">hobiji</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Trčanje
+                  <span class="badge bg-primary rounded-pill">hobiji</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Druženje s prijateljima i obitelji
+                  <span class="badge bg-primary rounded-pill">hobiji</span>
+                </li>
+              </ul>
+              
+      </main>
+    
+      
+    
+      <main class="container my-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="p-4 p-md-5 rounded-4 shadow-sm bg-white">
+              <form action="#" method="GET" class="needs-validation" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="name" class="form-label">Ime</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Vaše ime" required>
+                    <div class="invalid-feedback">Molim upišite ime.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="ime@domena.com" required>
+                    <div class="invalid-feedback">Molim upišite ispravan email.</div>
+                  </div>
+                  <div class="col-12">
+                    <label for="subject" class="form-label">Tema poruke</label>
+                    <select id="subject" name="subject" class="form-select" required>
+                      <option value="" selected disabled>Odaberite temu</option>
+                      <option>Upit o suradnji</option>
+                      <option>Volontiranje s djecom</option>
+                      <option>Dogovor za susret</option>
+                      <option>Ostalo</option>
+                    </select>
+                    <div class="invalid-feedback">Molim odaberite temu.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="datum" class="form-label">Odaberite datum</label>
+                    <input type="date" class="form-control" id="datum" name="datum">
+                  </div>
+        
+                  <div class="col-12">
+                    <label for="message" class="form-label">Poruka</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Vaša poruka..." required></textarea>
+                    <div class="invalid-feedback">Molim napišite poruku.</div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-dark btn-lg px-4" type="submit">Pošalji Poruku</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+    
+      
+    
+      
+      <script src="index.js"></script>
+    </body>
+    </html>
+    
+</body>
+</html>
